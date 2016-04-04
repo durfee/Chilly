@@ -1,0 +1,111 @@
+/* Bootstrapped & edited internal Skeleton import 
+  * because bower is being *stoopid*. Some overrides+
+  * modifications also included.
+  * 
+  * Skeleton V2.0.4
+  * Copyright 2014, Dave Gamache
+  * www.getskeleton.com
+  * Free to use under the MIT license.
+  * http://www.opensource.org/licenses/mit-license.php
+  * 12/9/2014
+  * Sass Version by Seth Coelen https://github.com/whatsnewsaes
+  */
+// BASE THEME 
+
+@import bourbon/bourbon
+@import neat/neat
+
+// Breakpoints
+$bp-larger-than-mobile    : 400px !default
+$bp-larger-than-phablet   : 550px !default
+$bp-larger-than-tablet    : 750px !default
+$bp-larger-than-desktop   : 1000px !default
+$bp-larger-than-desktophd : 1200px !default
+
+// Colors and font stack from Skeleton (getskeleton.com)
+$light-grey: #e1e1e1 !default
+$dark-grey: #333 !default
+$darker-grey: #222 !default
+$primary-color: #33c3f0 !default
+$secondary-color: lighten($dark-grey, 13.5%) !default
+$border-color: #bbb !default
+$link-color: #1eaedb !default
+$font-color: #222 !default
+
+// Typography
+$font-family: "Museo Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default
+
+/* Base files. */
+@import css/base/normalize
+@import css/base/variables
+@import css/base/functions
+@import css/base/base-styles
+@import css/base/utils
+@import css/base/typography
+
+/* Modules */
+@import css/modules/buttons
+@import css/modules/code
+@import css/modules/forms
+@import css/modules/lists
+@import css/modules/spacing
+@import css/modules/grid
+@import css/modules/tables
+
+header
+  @include outer-container
+  nav
+    height: 6.5rem
+    background: white
+    border-top: 1px solid $light-grey
+    border-bottom: 1px solid $light-grey
+    ul
+      .nav-item
+        position: relative
+        display: inline-block
+        text-align: center
+        a
+          line-height: 6.5rem
+          padding: 1.5rem 2.5rem
+          text-decoration: none
+          font-weight: 600
+          color: $darker-grey
+          text-transform: uppercase
+          letter-spacing: 0.15rem
+section.hero
+  .hero__inner
+    text-align: center
+    padding: 6em 0 4em
+    h4
+      padding-bottom: 2em
+section.info
+  @include outer-container
+  .row
+    @include row()
+    .info-box
+      @include media($bp-larger-than-tablet)
+        @include span-columns(4)
+      &:first-child
+        margin-left: 0
+      .info-box__img
+        margin: 0 auto
+        background-color: #eeeeee
+        border-radius: 45em
+        border: none
+      .info-box__copy
+        text-align: center
+section.mini-hero__cta
+  background: $light-grey
+  padding: 12rem 0 8rem
+  text-align: center
+section.team
+  @include outer-container
+  padding: 6rem 0 4rem
+  .team-member
+    @include span-columns(6)
+    @include omega(2n)
+    text-align: center
+
+    &:last-child
+      @include span-columns(6)
+      @include shift(3)

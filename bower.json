@@ -1,0 +1,24 @@
+{
+  "name": "chilly",
+  "authors": [
+    "durfee"
+  ],
+  "description": "Static landing page and smoke test for Chilly.",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "static",
+    "stand-alone",
+    "responsive"
+  ],
+  "license": "Copyright 2016 Chilly",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
