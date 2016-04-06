@@ -99,13 +99,32 @@ section.mini-hero__cta
   padding: 12rem 0 8rem
   text-align: center
 section.team
-  @include outer-container
   padding: 6rem 0 4rem
-  .team-member
-    @include span-columns(6)
-    @include omega(2n)
+  @include outer-container
+  .section-title
     text-align: center
+  .team-inner
+    @include outer-container
+    .team-member
+      @include span-columns(12)
+      padding: 1rem
+      @include media($bp-larger-than-phablet)
+        @include span-columns(6)
+        @include omega(2n)
+        &:last-child
+          @include span-columns(6)
+          @include shift(3)
+footer
+  display: block
+  position: relative
+  background: $darker-grey
+  .footer-inner
+    @include outer-container
+    padding: 2rem 0
+    p
+      color: white
+      text-align: center
+.email
+  width: 275px
 
-    &:last-child
-      @include span-columns(6)
-      @include shift(3)
+  

@@ -738,31 +738,69 @@ section.mini-hero__cta {
   text-align: center; }
 
 section.team {
+  padding: 6rem 0 4rem;
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto;
-  padding: 6rem 0 4rem; }
+  margin-right: auto; }
   section.team::after {
     clear: both;
     content: "";
     display: table; }
-  section.team .team-member {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 48.821174201%;
+  section.team .section-title {
     text-align: center; }
-    section.team .team-member:last-child {
-      margin-right: 0; }
-    section.team .team-member:nth-child(2n) {
-      margin-right: 0; }
-    section.team .team-member:nth-child(2n+1) {
-      clear: left; }
-    section.team .team-member:last-child {
+  section.team .team-inner {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    section.team .team-inner::after {
+      clear: both;
+      content: "";
+      display: table; }
+    section.team .team-inner .team-member {
       float: left;
       display: block;
       margin-right: 2.3576515979%;
-      width: 48.821174201%;
-      margin-left: 25.5894128995%; }
-      section.team .team-member:last-child:last-child {
+      width: 100%;
+      padding: 1rem; }
+      section.team .team-inner .team-member:last-child {
         margin-right: 0; }
+      @media screen and (min-width: 550px) {
+        section.team .team-inner .team-member {
+          float: left;
+          display: block;
+          margin-right: 2.3576515979%;
+          width: 48.821174201%; }
+          section.team .team-inner .team-member:last-child {
+            margin-right: 0; }
+          section.team .team-inner .team-member:nth-child(2n) {
+            margin-right: 0; }
+          section.team .team-inner .team-member:nth-child(2n+1) {
+            clear: left; }
+          section.team .team-inner .team-member:last-child {
+            float: left;
+            display: block;
+            margin-right: 2.3576515979%;
+            width: 48.821174201%;
+            margin-left: 25.5894128995%; }
+            section.team .team-inner .team-member:last-child:last-child {
+              margin-right: 0; } }
+
+footer {
+  display: block;
+  position: relative;
+  background: #222; }
+  footer .footer-inner {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 0; }
+    footer .footer-inner::after {
+      clear: both;
+      content: "";
+      display: table; }
+    footer .footer-inner p {
+      color: white;
+      text-align: center; }
+
+.email {
+  width: 275px; }
