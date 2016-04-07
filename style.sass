@@ -108,6 +108,12 @@ section.team
     .team-member
       @include span-columns(12)
       padding: 1rem
+      text-align: center
+      .team-headshot
+        padding-bottom: 2rem
+        img
+          width: 250px
+          border-radius: 125px
       @include media($bp-larger-than-phablet)
         @include span-columns(6)
         @include omega(2n)

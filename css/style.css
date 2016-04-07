@@ -761,9 +761,15 @@ section.team {
       display: block;
       margin-right: 2.3576515979%;
       width: 100%;
-      padding: 1rem; }
+      padding: 1rem;
+      text-align: center; }
       section.team .team-inner .team-member:last-child {
         margin-right: 0; }
+      section.team .team-inner .team-member .team-headshot {
+        padding-bottom: 2rem; }
+        section.team .team-inner .team-member .team-headshot img {
+          width: 250px;
+          border-radius: 125px; }
       @media screen and (min-width: 550px) {
         section.team .team-inner .team-member {
           float: left;
